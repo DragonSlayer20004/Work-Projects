@@ -21,7 +21,7 @@ Lab11: Given the struct Contact create a tree to store all the contracts and all
 Lab12: Create a simple checksum to guard against accidental file corruption by following the process of an older prgoram, sum and replicating the same answers as it.
 Lab13: Create a simple one sided chat program that has a server open up a port waiting for connections and a seperate program to connect and send messages to the server.
 Lab14: Create a C++ program to convert decimal numbers into text format.
-Lab15: In Progress
+Lab15: Create two objects with a name and int and have them do battle against each other.
 
 Project1: Output the first 50 terms of the Lazy Caterer's sequence, Prime numbers, Fibonacci sequence, Collatz stopping times, and Happy numbers.
 Project2: Code a One Time Pad encryption system using Tiling, Chaining, and Encryption/Decryption
