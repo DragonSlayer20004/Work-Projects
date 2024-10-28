@@ -5,9 +5,13 @@ Introduction to fundamental data structures and computing algorithms within an o
 Principles of data abstraction and representation are examined. Additional topics include specification,
 design, use, and implementation of abstractions; recursion; and intuitive analysis of algorithms.
 
-There are 5 assignments and 4 projects total. All labs and projects are done in Java. (Assignment 2, 3 wasn't code based and thus not included)
+There are 7 assignments and 4 projects total. All labs and projects are done in Java. (Assignment 2, 3, 5, 6 wasn't code based and thus not included)
 
-Assignment1: Recreate the List java class and test using unit tests. Included List methods are: newList, add, addAll, clear, contains, get, indexOf, isEmpty, lastIndexOf, remove, set, size.
+Assignment1: Recreate the List Java class and test using unit tests. Included List methods are: newList, add, addAll, clear, contains, get, indexOf, isEmpty, lastIndexOf, remove, set, size.
+Assignment4: Recreate the HashTable Java class and test using unit tests. Include HashTable methods are: hash, step, nextPrime, isPrime, containsKey, put, get.
+Assignment7: Perform several sorts and compute how long they took. Sorts methods included are: Quick Sort, Merge Sort, Heap Sort, Radix Sort.
 
-
-DSProject1:
+DSProject1: Read in a bitmap and make adjustments to the file based on inputted commands. Commands are: invert, grayScale, blur, verticallyFlip, shrink, enlarge, rotate, medianFilter, horizontallyMirror.
+DSProject2: Read in mathmatical equations and give out the appropiate answer according to PEMDAS. Example: (20/(10)+3)
+DSProject3: Use a red black tree to read in words with a rating of how good or bad the word is.
+DSProject4: Read in a graph and answer questions about it. Methods included are: isConnected, minimumSpanningTree, shortestPath, isMetric, makeMetric, travelingSalesmanProblem, approximateTSP.
