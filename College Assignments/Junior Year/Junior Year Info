@@ -1,12 +1,13 @@
-Junior Year at Otterbein university course COMP 2100 Computer Systems
+Semester 3 at Otterbein university course COMP 2100 Computer Systems
 
 Short Course Description:
 Introduction to fundamental data structures and computing algorithms within an object-oriented context.
 Principles of data abstraction and representation are examined. Additional topics include specification,
 design, use, and implementation of abstractions; recursion; and intuitive analysis of algorithms.
 
-There are 7 assignments and 4 projects total. All labs and projects are done in Java.
+There are 5 assignments and 4 projects total. All labs and projects are done in Java. (Assignment 2, 3 wasn't code based and thus not included)
 
-Assignment1:
+Assignment1: Recreate the List java class and test using unit tests. Included List methods are: newList, add, addAll, clear, contains, get, indexOf, isEmpty, lastIndexOf, remove, set, size.
+
 
 DSProject1:
