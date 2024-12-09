@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAX-WS Client</title>
+</head>
+<body>
+<h1>JAX-WS Service Response</h1>
+<button onclick="fetchTestData()">Fetch Data from JAX-WS Server</button>
+<div id="response"></div>
+
+<h1>JAX-WS Service Response</h1>
+<button onclick="fetchRockData()">Fetch Data from JAX-WS Server</button>
+<div id="rockResponse"></div>
+
+<h1>JAX-WS Service Response</h1>
+<button onclick="fetchRockNameData()">Fetch Data from JAX-WS Server</button>
+<div id="rockNameResponse"></div>
+
+<h1>JAX-WS Service Response</h1>
+<button onclick="fetchRockImageData()">Fetch Data from JAX-WS Server</button>
+<div id="rockImageResponse"></div>
+
+<h1>JAX-WS Service Response</h1>
+<button onclick="fetchRockDescriptionData()">Fetch Data from JAX-WS Server</button>
+<div id="rockDescriptionResponse"></div>
+
+<script>
+function fetchTestData() {
+    const xmlData = `
+        <request>
+            <name>John Doe</name>
+            <message>Hello, this is a test message</message>
+        </request>
+    `;
+
+    fetch("http://127.0.0.1:12345/users", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/xml",
+        },
+        body: xmlData
+    })
+    .then(response => response.text())
+    .then(data => {
+        console.log("Response from server:", data);
+        document.getElementById("response").innerHTML = data; // Display response in HTML
+    })
+    .catch(error => {
+        console.error("Error:", error);
+        document.getElementById("response").innerHTML = "Error: " + error;
+    });
+}
+
+function fetchRockData() {
+    const xmlData = `
+        <request>
+            <RockID>7</RockID>
+        </request>
+    `;
+
+    fetch("http://127.0.0.1:12345/rocks", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/xml",
+        },
+        body: xmlData
+    })
+    .then(response => response.text())
+    .then(data => {
+        console.log("Response from server:", data);
+        document.getElementById("rockResponse").innerHTML = data; // Display response in HTML
+    })
+    .catch(error => {
+        console.error("Error:", error);
+        document.getElementById("rockResponse").innerHTML = "Error: " + error;
+    });
+}
+
+function fetchRockNameData() {
+    const xmlData = `
+        <request>
+            <RockID>15</RockID>
+        </request>
+    `;
+
+    fetch("http://127.0.0.1:12345/rocksName", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/xml",
+        },
+        body: xmlData
+    })
+    .then(response => response.text())
+    .then(data => {
+        console.log("Response from server:", data);
+        document.getElementById("rockNameResponse").innerHTML = data; // Display response in HTML
+    })
+    .catch(error => {
+        console.error("Error:", error);
+        document.getElementById("rockNameResponse").innerHTML = "Error: " + error;
+    });
+}
+
+function fetchRockImageData() {
+    const xmlData = `
+        <request>
+            <RockID>7</RockID>
+        </request>
+    `;
+
+    fetch("http://127.0.0.1:12345/rocksImage", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/xml",
+        },
+        body: xmlData
+    })
+    .then(response => response.text())
+    .then(data => {
+        console.log("Response from server:", data);
+        document.getElementById("rockImageResponse").innerHTML = data; // Display response in HTML
+    })
+    .catch(error => {
+        console.error("Error:", error);
+        document.getElementById("rockImageResponse").innerHTML = "Error: " + error;
+    });
+}
+
+function fetchRockDescriptionData() {
+    const xmlData = `
+        <request>
+            <RockID>7</RockID>
+        </request>
+    `;
+
+    fetch("http://127.0.0.1:12345/rocksDescription", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/xml",
+        },
+        body: xmlData
+    })
+    .then(response => response.text())
+    .then(data => {
+        console.log("Response from server:", data);
+        document.getElementById("rockDescriptionResponse").innerHTML = data; // Display response in HTML
+    })
+    .catch(error => {
+        console.error("Error:", error);
+        document.getElementById("rockDescriptionResponse").innerHTML = "Error: " + error;
+    });
+}
+</script>
+</body>
+</html>
