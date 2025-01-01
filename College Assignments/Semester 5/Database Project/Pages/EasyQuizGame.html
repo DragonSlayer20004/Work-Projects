@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <base href="">
+    <title>Rocks Are Fun</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../Media/JavaScript/BeforeEachPage.js"></script>
+    <script src="../Media/JavaScript/EasyQuizGame.js"></script>
+    <link rel="stylesheet" href="../Media/CSS/rockStyle.css">
+</head>
+<body>
+    <div class="banner">
+        <img id = "bannerImage" src="../Media/Images/rockBanner.jpg" alt="Main Banner Image">
+        <div class="bannerTextContainer">
+            <div>
+                <h1 class="BannerTitle">Rocks Are Fun!</h1>
+            </div>
+            <div>
+                <h2 class="smallBannerText">Explore around and learn about rocks!</h2>
+            </div>
+            <div id = "navBarColumnController"  class="center">
+                <div class = "navBarColumn">
+                    <a class="navFont" href = "Index.html">Homepage</a>
+                </div>
+                <div class = "navBarColumn">
+                    <div class="dropdown">
+                        <p class="dropbtn navFont">Study Pages</p>
+                        <div class="dropdown-content">
+                        <a class="navFont" href = "SedimentaryRocks.html">Sedimentary</a>
+                        <a class="navFont" href = "IgneousRocks.html">Igneous</a>
+                        <a class="navFont" href = "MetamorphicRocks.html">Metamorphic</a>
+                        </div>
+                    </div>
+                </div>
+                <div class = "navBarColumn">
+                    <div class="dropdown">
+                        <p class="dropbtn navFont">Flash Cards</p>
+                        <div class="dropdown-content">
+                        <a class="navFont" href = "SedimentaryFlashCards.html">Sedimentary Cards</a>
+                        <a class="navFont" href = "IgenousFlashCards.html">Igneous Cards</a>
+                        <a class="navFont" href = "MetamorphicFlashCards.html">Metamorphic Cards</a>
+                        </div>
+                    </div>
+                </div> 
+                <div class = "navBarColumn">
+                    <div class="dropdown">
+                        <p class="dropbtn navFont">Memory Game</p>
+                        <div class="dropdown-content">
+                        <a class="navFont" href = "Index.html">Place Holder</a>
+                        </div>
+                    </div>
+                </div>
+                <div class = "navBarColumn">
+                    <div class="dropdown">
+                        <p class="dropbtn navFont">Guessing Game</p>
+                        <div class="dropdown-content">
+                        <a class="navFont" href = "ImageGuessGame.html">Image Guess Game</a>
+                        <a class="navFont" href = "DescriptionGuessGame.html">Description Guess Game</a>
+                        </div>
+                    </div>
+                </div>
+                <div class = "navBarColumn">
+                    <div class="dropdown">
+                        <p class="dropbtn navFont">Quizzes</p>
+                        <div class="dropdown-content">
+                        <a class="navFont" href = "EasyQuizGame.html">Easy Quiz</a>
+                        <a class="navFont" href = "MediumQuizGame.html">Medium Quiz</a>
+                        <a class="navFont" href = "HardQuizGame.html">Hard Quiz</a>
+                        </div>
+                    </div>
+                </div>
+                <div class= "navBarColumn">
+                    <div class = "dropdown">
+                        <p class="dropbtn navFont">User</p>
+                        <div class="dropdown-content">
+                        <a class="navFont" href = "Profile.html">Profile</a>
+                        <a class="navFont" href = "SignIn.html">Sign In</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class = "columnController">
+    <div class = adColumn>
+        <img class = "sideBanner" src="../Media/Images/rockSideBanner.jpg" alt="adPlacement" style="width:100%">
+    </div>
+    <div class = "centerColumn">
+        <h2 id="status">Welcome to the easy quiz!</h2>
+        <p></p>
+        <div class="columnController">
+            <div class="infoColumn center">
+                <div class = "center">
+                    <h3>What is this rock?</h3>
+                    <img id="quiz1" class="fade" src="../Media/Images/metamorphicRock.3.jpg" alt="Obsidian">
+                </div>
+                <form>
+                    <input id = answer1 type="radio" name="choice1" value="Wrong"><span id = answer1>Wrong</span>
+                    <input id = answer2 type="radio" name="choice1" value="Wrong"><span id = answer2>Wrong</span>
+                    <input id = answer3 type="radio" name="choice1" value="Wrong"><span id = answer3>Wrong</span>
+                    <input id = answer4 type="radio" name="choice1" value="Wrong"><span id = answer4>Wrong</span>
+                </form>
+            </div>
+            <div class="infoColumn center">
+                <div class = "center">
+                    <h3>What is this rock?</h3>
+                    <img id="quiz2" class="fade" src="../Media/Images/metamorphicRock.3.jpg" alt="Obsidian">
+                </div>
+                <form>
+                    <input id = answer5 type="radio" name="choice2" value="Wrong"><span id = answer5>Wrong</span>
+                    <input id = answer6 type="radio" name="choice2" value="Wrong"><span id = answer6>Wrong</span>
+                    <input id = answer7 type="radio" name="choice2" value="Wrong"><span id = answer7>Wrong</span>
+                    <input id = answer8 type="radio" name="choice2" value="Wrong"><span id = answer8>Wrong</span>
+                </form>
+            </div>
+            <div class="infoColumn center">
+                <div class = "center">
+                    <h3>What is this rock?</h3>
+                    <img id="quiz3" class="fade" src="../Media/Images/metamorphicRock.3.jpg" alt="Obsidian">
+                </div>
+                <form>
+                    <input id = answer9 type="radio" name="choice3" value="Wrong"><span id = answer9>Wrong</span>
+                    <input id = answer10 type="radio" name="choice3" value="Wrong"><span id = answer10>Wrong</span>
+                    <input id = answer11 type="radio" name="choice3" value="Wrong"><span id = answer11>Wrong</span>
+                    <input id = answer12 type="radio" name="choice3" value="Wrong"><span id = answer12>Wrong</span>
+                </form>
+            </div>
+        </div>
+        <div class="columnController">
+            <div class="infoColumn center">
+                <div class = "center">
+                    <h3>What is this rock?</h3>
+                    <img id="quiz4" class="fade" src="../Media/Images/metamorphicRock.3.jpg" alt="Obsidian">
+                </div>
+                <form>
+                    <input id = answer13 type="radio" name="choice4" value="Wrong"><span id = answer13>Wrong</span>
+                    <input id = answer14 type="radio" name="choice4" value="Wrong"><span id = answer14>Wrong</span>
+                    <input id = answer15 type="radio" name="choice4" value="Wrong"><span id = answer15>Wrong</span>
+                    <input id = answer16 type="radio" name="choice4" value="Wrong"><span id = answer16>Wrong</span>
+                </form>
+            </div>
+            <div class="infoColumn center">
+                <div class = "center">
+                    <h3>What is this rock?</h3>
+                    <img id="quiz5" class="fade" src="../Media/Images/metamorphicRock.3.jpg" alt="Obsidian">
+                </div>
+                <form>
+                    <input id = answer17 type="radio" name="choice5" value="Wrong"><span id = answer17>Wrong</span>
+                    <input id = answer18 type="radio" name="choice5" value="Wrong"><span id = answer18>Wrong</span>
+                    <input id = answer19 type="radio" name="choice5" value="Wrong"><span id = answer19>Wrong</span>
+                    <input id = answer20 type="radio" name="choice5" value="Wrong"><span id = answer20>Wrong</span>
+                </form>
+            </div>
+            <div class="infoColumn center">
+                <div class = "center">
+                    <h3>What is this rock?</h3>
+                    <img id="quiz6" class="fade" src="../Media/Images/metamorphicRock.3.jpg" alt="Obsidian">
+                    
+                </div>
+                <form>
+                    <input id = answer21 type="radio" name="choice6" value="Wrong"><span id = answer21>Wrong</span>
+                    <input id = answer22 type="radio" name="choice6" value="Wrong"><span id = answer22>Wrong</span>
+                    <input id = answer23 type="radio" name="choice6" value="Wrong"><span id = answer23>Wrong</span>
+                    <input id = answer24 type="radio" name="choice6" value="Wrong"><span id = answer24>Wrong</span>
+                </form>
+            </div>
+        </div>
+        <div class="columnController">
+            <div class="infoColumn center">
+                <div class = "center">
+                    <h3>What is this rock?</h3>
+                    <img id="quiz7" class="fade" src="../Media/Images/metamorphicRock.3.jpg" alt="Obsidian">
+                </div>
+                <form>
+                    <input id = answer25 type="radio" name="choice7" value="Wrong"><span id = answer25>Wrong</span>
+                    <input id = answer26 type="radio" name="choice7" value="Wrong"><span id = answer26>Wrong</span>
+                    <input id = answer27 type="radio" name="choice7" value="Wrong"><span id = answer27>Wrong</span>
+                    <input id = answer28 type="radio" name="choice7" value="Wrong"><span id = answer28>Wrong</span>
+                </form>
+            </div>
+            <div class="infoColumn center">
+                <div class = "center">
+                    <h3>What is this rock?</h3>
+                    <img id="quiz8" class="fade" src="../Media/Images/metamorphicRock.3.jpg" alt="Obsidian">
+                </div>
+                <form>
+                    <input id = answer29 type="radio" name="choice8" value="Wrong"><span id = answer29>Wrong</span>
+                    <input id = answer30 type="radio" name="choice8" value="Wrong"><span id = answer30>Wrong</span>
+                    <input id = answer31 type="radio" name="choice8" value="Wrong"><span id = answer31>Wrong</span>
+                    <input id = answer32 type="radio" name="choice8" value="Wrong"><span id = answer32>Wrong</span>
+                </form>
+            </div>
+            <div class="infoColumn center">
+                <div class = "center">
+                    <h3>What is this rock?</h3>
+                    <img id="quiz9" class="fade" src="../Media/Images/metamorphicRock.3.jpg" alt="Obsidian">
+                </div>
+                <form>
+                    <input id = answer33 type="radio" name="choice9" value="Wrong"><span id = answer33>Wrong</span>
+                    <input id = answer34 type="radio" name="choice9" value="Wrong"><span id = answer34>Wrong</span>
+                    <input id = answer35 type="radio" name="choice9" value="Wrong"><span id = answer35>Wrong</span>
+                    <input id = answer36 type="radio" name="choice9" value="Wrong"><span id = answer36>Wrong</span>
+                </form>
+            </div>
+        </div>
+        <div class="center">
+            <h2>Submit your answers!</h2>
+            <button onclick="submitAnswer()">Submit Answers</button>
+        </div>
+    </div>
+    <div class = adColumn>
+        <img class = "sideBanner" src="../Media/Images/rockSideBanner.jpg" alt="adPlacement" style="width:100%">
+    </div>
+</div>
+
+<footer class="center">Copyright 2023, Kyle Hinkle.</footer>
+<script>
+    document.onload = startPage();
+</script>
+
+</body>
+</html>

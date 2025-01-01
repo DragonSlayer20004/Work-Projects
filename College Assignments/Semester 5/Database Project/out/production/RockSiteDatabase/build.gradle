@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // MySQL JDBC Driver
+    implementation 'mysql:mysql-connector-java:8.0.32'
+}
+
+application {
+    mainClass = 'javaClasses/webServer/ServerController'  // Replace with the correct package and class name
+}
+

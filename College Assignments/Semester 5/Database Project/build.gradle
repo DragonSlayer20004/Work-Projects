@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // MySQL JDBC Driver
+    implementation 'mysql:mysql-connector-java:8.0.32'
+    // WebSocket
+    implementation 'javax.websocket:javax.websocket-api:1.1'
+    //JavaX
+    implementation 'javax.xml.ws:jaxws-api:2.3.1'
+    implementation 'com.sun.xml.ws:jaxws-rt:2.3.3'
+    implementation 'org.json:json:20210307'
+}
+
+application {
+    mainClass = 'javaClasses/webServer/Server'  // Replace with the correct package and class name
+}
+

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <base href="">
+    <title>Rocks Are Fun</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../Media/JavaScript/BeforeEachPage.js"></script>
+    <script src="../Media/JavaScript/ChangingRockImage.js"></script>
+    <link rel="stylesheet" href="../Media/CSS/rockStyle.css">
+</head>
+<body>
+<div class="banner">
+    <img id = "bannerImage" src="../Media/Images/rockBanner.jpg" alt="Main Banner Image">
+    <div class="bannerTextContainer">
+        <div>
+            <h1 class="BannerTitle">Rocks Are Fun!</h1>
+        </div>
+        <div>
+            <h2 class="smallBannerText">Explore around and learn about rocks!</h2>
+        </div>
+        <div id = "navBarColumnController"  class="center">
+            <div class = "navBarColumn">
+                <a class="navFont" href = "Index.html">Homepage</a>
+            </div>
+            <div class = "navBarColumn">
+                <div class="dropdown">
+                    <p class="dropbtn navFont">Study Pages</p>
+                    <div class="dropdown-content">
+                    <a class="navFont" href = "SedimentaryRocks.html">Sedimentary</a>
+                    <a class="navFont" href = "IgneousRocks.html">Igneous</a>
+                    <a class="navFont" href = "MetamorphicRocks.html">Metamorphic</a>
+                    </div>
+                </div>
+            </div>
+            <div class = "navBarColumn">
+                <div class="dropdown">
+                    <p class="dropbtn navFont">Flash Cards</p>
+                    <div class="dropdown-content">
+                    <a class="navFont" href = "SedimentaryFlashCards.html">Sedimentary Cards</a>
+                    <a class="navFont" href = "IgenousFlashCards.html">Igneous Cards</a>
+                    <a class="navFont" href = "MetamorphicFlashCards.html">Metamorphic Cards</a>
+                    </div>
+                </div>
+            </div> 
+            <div class = "navBarColumn">
+                <div class="dropdown">
+                    <p class="dropbtn navFont">Memory Game</p>
+                    <div class="dropdown-content">
+                    <a class="navFont" href = "Index.html">Place Holder</a>
+                    </div>
+                </div>
+            </div>
+            <div class = "navBarColumn">
+                <div class= "dropdown">
+                    <p class= "dropbtn navFont">Guessing Game</p>
+                    <div class= "dropdown-content">
+                    <a class= "navFont" href = "ImageGuessGame.html">Image Guess Game</a>
+                    <a class= "navFont" href = "DescriptionGuessGame.html">Description Guess Game</a>
+                    </div>
+                </div>
+            </div>
+            <div class = "navBarColumn">
+                <div class= "dropdown">
+                    <p class= "dropbtn navFont">Quizzes</p>
+                    <div class="dropdown-content">
+                    <a class="navFont" href = "EasyQuizGame.html">Easy Quiz</a>
+                    <a class="navFont" href = "MediumQuizGame.html">Medium Quiz</a>
+                    <a class="navFont" href = "HardQuizGame.html">Hard Quiz</a>
+                    </div>
+                </div>
+            </div>
+            <div class= "navBarColumn">
+                <div class= "dropdown">
+                    <p class= "dropbtn navFont">User</p>
+                    <div class= "dropdown-content">
+                    <a class= "navFont" href = "Profile.html">Profile</a>
+                    <a class= "navFont" href = "SignIn.html">Sign In</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class = "columnController">
+    <div class = adColumn>
+        <img class = "sideBanner" src="../Media/Images/rockSideBanner.jpg" alt="adPlacement" style="width:100%">
+    </div >
+    <div class = "centerColumn">
+        <h1 class = "center headerInfo" >Welcome to Rocks Are Fun!</h1>
+        <div>
+            <p class="infoText center">Do you want to learn about rocks! If you answered yes then you came to the right location!</p>
+            <p class="infoText center">We have alot for you to do! So feel free to explore around and learn to your heart's content!</p>
+            <p class="infoText center">Once you feel confident feel free to take the quiz at the end and see how you do!</p>
+        </div>
+        <div class="columnController">
+            <div class="infoColumn center">
+                <h2 class="center">Study Pages</h2>
+                <p class="infoText">We have three wonderful pages full of information for you to study!</p>
+                <p class="infoText">We have pages each dedicated to the three main types of rocks!</p>
+                <p class="infoText"><a href="SedimentaryRocks.html">Sedimentary Rocks</a> which are formed by the accumulation of sediments.</p>
+                <p class="infoText"><a href="IgneousRocks.html">Igneous Rocks</a> which are fromed from the solidification of molten rock.</p>
+                <p class="infoText"><a href="MetamorphicRocks.html">Metamorphic Rocks</a> which have been modified from intense heat and pressure from beneath the surface.</p>
+            </div>
+            <div class="infoColumn center">
+                <div id = "rotatingImageBox">
+                    <img id="rotatingImage" src="../Media/Images/metamorphicRock.3.jpg" alt="Obsidian">
+                </div>
+                <div>
+                    <p id="rotatingImageInformation" class="center">Obsidian is a naturally occurring volcanic glass formed when lava extruded from a volcano cools rapidly with minimal crystal growth.</p>
+                </div>
+            </div>
+        </div>
+        <div class="columnController">
+            <div class="infoColumn center">
+                <h2 class="center">Flash Cards!</h2>
+                <p class="infoText">We have several Flash Card Sets for you to look through!</p>
+                <p class="infoText">Each set is dedicated to help teach you the most important facts about rocks!</p>
+                <p class="infoText"><a href="SedimentaryFlashCards.html">Sedimentary Cards</a> memorize sedimentary rocks and how they are formed!</p>
+                <p class="infoText"><a href="IgenousFlashCards.html">Igneous Cards</a> memorize Igneous rocks and how they are formed!</p>
+                <p class="infoText"><a href="MetamorphicFlashCards.html">Metamorphic Cards</a> memorize Metamorphic rocks and how they are formed!</p>
+                <p class="infoText"><a href="FlashCards.html">Challenge Cards</a> if you want a challenge, do them all at once!</p>
+            </div>
+            <div class="infoColumn center">
+                <div id = "rotatingImageBox">
+                    <img id="rotatingImage" src="../Media/Images/flashCardsGif.gif" alt="FlashCardsGif">
+                </div>
+            </div>
+        </div>
+        <div class="columnController">
+            <div class="infoColumn center">
+                <h2 class="center">Memory Game</h2>
+                <p class="infoText">Memory games will test your skill at remembering information and its connecting rocks.</p>
+                <p class="infoText">With several modes you choose which one best fits your skill level!</p>
+                <p class="infoText"><a href="SedimentaryRocks.html">Simple matching game</a> is a easy memory game where you pair rocks with each other.</p>
+                <p class="infoText"><a href="IgneousRocks.html">Naming matching game</a> takes the difficulty up a notch as you need to compare rocks with their associating names. </p>
+                <p class="infoText"><a href="SedimentaryRocks.html">Descriptive matching game</a> is the hardest as you have to guess the rock of the description given.</p>
+            </div>
+            <div class="infoColumn center">
+                <div id = "rotatingImageBox">
+                    <img id="rotatingImage" src="../Media/Images/metamorphicRock.3.jpg" alt="Obsidian">
+                </div>
+                <div>
+                    <!--Change later to show the memory game-->
+                    <p id="rotatingImageInformation" class="center">Obsidian is a naturally occurring volcanic glass formed when lava extruded from a volcano cools rapidly with minimal crystal growth.</p>
+                </div>
+            </div>
+        </div>
+        <div class="columnController">
+            <div class="infoColumn center">
+                <h2 class="center">Guessing Game</h2>
+                <p class="infoText">We have a very fun guessing game to help you learn about rocks.</p>
+                <p class="infoText">Each game is randomized to keep you on your toes! There are even unique modes to play!</p>
+                <p class="infoText"><a href="ImageGuessGame.html">Image guess game</a> shows you a rock and you have to guess what it is!</p>
+                <p class="infoText"><a href="DescriptionGuessGame.html">Description guess game</a> gives you a short description and you have to guess what rock it is!</p>
+            </div>
+            <div class="infoColumn center">
+                <div id = "rotatingImageBox">
+                    <img id="rotatingImage" src="../Media/Images/GuessGameGif.gif" alt="GuessGameGif">
+                </div>
+            </div>
+        </div>
+        <div class="columnController">
+            <div class="infoColumn center">
+                <h2 class="center">Quiz</h2>
+                <p class="infoText">We have several difficulty levels of quizes for you to test your knowledge.</p>
+                <p class="infoText">The quiz will ask you several types of questions all of which is randomized on each new quiz.</p>
+                <p class="infoText"><a href="EasyQuizGame.html">Easy difficulty quiz</a> common facts and multiple choice questions.</p>
+                <p class="infoText"><a href="MediumQuizGame.html">Medium difficulty quiz</a> uncommon facts and more complicated question formats.</p>
+                <p class="infoText"><a href="HardQuizGame.html">Hard difficulty quiz</a> rare facts and short answer responses and tough questions.</p>
+            </div>
+            <div class="infoColumn center">
+                <div id = "rotatingImageBox">
+                    <img id="rotatingImage" src="../Media/Images/metamorphicRock.3.jpg" alt="Obsidian">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class = adColumn>
+        <img class = "sideBanner" src="../Media/Images/rockSideBanner.jpg" alt="adPlacement" style="width:100%">
+    </div>
+</div>
+
+<footer class="center">Copyright 2023, Kyle Hinkle.</footer>
+
+<script>
+    document.onload = startPage();
+</script>
+</body>
+</html>

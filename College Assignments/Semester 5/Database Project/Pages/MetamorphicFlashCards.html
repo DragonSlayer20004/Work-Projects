@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <base href="">
+    <title>Rocks Are Fun</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../Media/JavaScript/BeforeEachPage.js"></script>
+    <script src="../Media/JavaScript/MetamorphicFlashCardGame.js"></script>
+    <link rel="stylesheet" href="../Media/CSS/rockStyle.css">
+</head>
+<body>
+    <div class="banner">
+        <img id = "bannerImage" src="../Media/Images/rockBanner.jpg" alt="Main Banner Image">
+        <div class="bannerTextContainer">
+            <div>
+                <h1 class="BannerTitle">Rocks Are Fun!</h1>
+            </div>
+            <div>
+                <h2 class="smallBannerText">Explore around and learn about rocks!</h2>
+            </div>
+            <div id = "navBarColumnController"  class="center">
+                <div class = "navBarColumn">
+                    <a class="navFont" href = "Index.html">Homepage</a>
+                </div>
+                <div class = "navBarColumn">
+                    <div class="dropdown">
+                        <p class="dropbtn navFont">Study Pages</p>
+                        <div class="dropdown-content">
+                        <a class="navFont" href = "SedimentaryRocks.html">Sedimentary</a>
+                        <a class="navFont" href = "IgneousRocks.html">Igneous</a>
+                        <a class="navFont" href = "MetamorphicRocks.html">Metamorphic</a>
+                        </div>
+                    </div>
+                </div>
+                <div class = "navBarColumn">
+                    <div class="dropdown">
+                        <p class="dropbtn navFont">Flash Cards</p>
+                        <div class="dropdown-content">
+                        <a class="navFont" href = "SedimentaryFlashCards.html">Sedimentary Cards</a>
+                        <a class="navFont" href = "IgenousFlashCards.html">Igneous Cards</a>
+                        <a class="navFont" href = "MetamorphicFlashCards.html">Metamorphic Cards</a>
+                        </div>
+                    </div>
+                </div> 
+                <div class = "navBarColumn">
+                    <div class="dropdown">
+                        <p class="dropbtn navFont">Memory Game</p>
+                        <div class="dropdown-content">
+                        <a class="navFont" href = "Index.html">Place Holder</a>
+                        </div>
+                    </div>
+                </div>
+                <div class = "navBarColumn">
+                    <div class="dropdown">
+                        <p class="dropbtn navFont">Guessing Game</p>
+                        <div class="dropdown-content">
+                        <a class="navFont" href = "ImageGuessGame.html">Image Guess Game</a>
+                        <a class="navFont" href = "DescriptionGuessGame.html">Description Guess Game</a>
+                        </div>
+                    </div>
+                </div>
+                <div class = "navBarColumn">
+                    <div class="dropdown">
+                        <p class="dropbtn navFont">Quizzes</p>
+                        <div class="dropdown-content">
+                        <a class="navFont" href = "EasyQuizGame.html">Easy Quiz</a>
+                        <a class="navFont" href = "MediumQuizGame.html">Medium Quiz</a>
+                        <a class="navFont" href = "HardQuizGame.html">Hard Quiz</a>
+                        </div>
+                    </div>
+                </div>
+                <div class= "navBarColumn">
+                    <div class = "dropdown">
+                        <p class="dropbtn navFont">User</p>
+                        <div class="dropdown-content">
+                        <a class="navFont" href = "Profile.html">Profile</a>
+                        <a class="navFont" href = "SignIn.html">Sign In</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class = "columnController">
+    <div class = adColumn>
+        <img class = "sideBanner" src="../Media/Images/rockSideBanner.jpg" alt="adPlacement" style="width:100%">
+    </div>
+    <div class = "centerColumn">
+        <h2 id="status">Metamorphic Flash Cards!</h2>
+        <div class="columnController">
+            <div class="slideShowButton" onclick="plusSlides(-1)">
+                <p class="infoText">PREVIOUS</p>
+            </div>
+            <div class="infoColumn center" onclick="toggleImage()">
+                <div class = "center">
+                    <img id="flashCard" class="fade" src="../Media/Images/metamorphicRock.3.jpg" alt="Obsidian">
+                    <p id="flashCardText" class="infoText"></p>
+                </div>
+            </div>
+            <div class="slideShowButton" onclick="plusSlides(1)">
+                <p class="infoText">NEXT</p>
+            </div>
+        </div>
+    </div>
+    <div class = adColumn>
+        <img class = "sideBanner" src="../Media/Images/rockSideBanner.jpg" alt="adPlacement" style="width:100%">
+    </div>
+</div>
+
+<footer class="center">Copyright 2023, Kyle Hinkle.</footer>
+<script>
+    document.onload = startPage();
+</script>
+
+</body>
+</html>
