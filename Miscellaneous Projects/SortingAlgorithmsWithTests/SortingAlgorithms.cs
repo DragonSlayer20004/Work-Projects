@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Concurrent;
 using System.Diagnostics;
 using System.Linq;
 
@@ -28,7 +29,7 @@ namespace SortingAlgorithm
                 randomizedValues[i] = random.Next();
             }
 
-            Console.WriteLine("Performing sorting tests with " + amount + " integers.");
+            Console.WriteLine("Performing sorting tests with " + amount + " integers.\n");
 
 
             Console.WriteLine("Executing Bubble Sort");
@@ -81,6 +82,32 @@ namespace SortingAlgorithm
             else
             {
                 Console.WriteLine("Insertion Sort failed to sort.\n");
+            }
+
+            Console.WriteLine("Executing QuickSort Sort");
+
+            //Create Insertion Sort Array
+            int[] quickSortArray = new int[amount];
+            Array.Copy(randomizedValues, 0, quickSortArray, 0, amount);
+
+            //Start Timer
+            stopWatch.Restart();
+
+            //Perform Insertion Sort
+            quickSortArray = QuickSort(quickSortArray, 0, quickSortArray.Length - 1);
+
+            //End Timer
+            stopWatch.Stop();
+
+
+            //Check Insertion Sort
+            if (CheckSort(quickSortArray))
+            {
+                Console.WriteLine("QuickSort Sort took: " + stopWatch.Elapsed.TotalMilliseconds + " Millisecond.\n");
+            }
+            else
+            {
+                Console.WriteLine("QuickSort Sort failed to sort.\n");
             }
         }
 
@@ -154,6 +181,47 @@ namespace SortingAlgorithm
             }
 
             return insertionsortArray;
+        }
+
+        /*
+         *  QuickSort chooses a pivot point and splits the away apart into smaller segments that are quicker to organize.
+         */
+        public static int[] QuickSort(int[] quickSortArray, int start, int end)
+        {
+            if (start < end)
+            {
+                int pivot = Partition(quickSortArray, start, end); //Find initial center pivot
+                QuickSort(quickSortArray, start, pivot - 1); //Sort left side
+                QuickSort(quickSortArray, pivot + 1, end); //Sort right side
+            }
+            return quickSortArray;
+        }
+
+        /*
+         * Helper method of QuickSort. Aids in breaking the array into segments and then sorting them
+         */
+        public static int Partition(int[] quickSortArray, int left, int right)
+        {
+            int pivotValue = quickSortArray[right]; // Use the rightmost element as the pivot
+            int pivotIndex = left; // Pointer for greater element
+
+            // Loop through moving elements to the left so larger numbers are on the right
+            for (int i = left; i < right; i++)
+            {
+                if (quickSortArray[i] >= pivotValue)
+                {
+                    int tempValue = quickSortArray[i];
+                    quickSortArray[i] = quickSortArray[pivotIndex];
+                    quickSortArray[pivotIndex] = tempValue;
+                    pivotIndex++;
+                }
+            }
+
+            //Swap the pivot back to its original position
+            int temp = quickSortArray[pivotIndex];
+            quickSortArray[pivotIndex] = quickSortArray[right];
+            quickSortArray[right] = temp;
+            return pivotIndex;
         }
     }
 }

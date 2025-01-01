@@ -71,5 +71,29 @@ namespace SortingAlgorithm
             //Check Insertion Sort
             Assert.IsTrue(SortingAlgorithms.CheckSort(insertionsortArray), "Bubble Sort took: " + stopWatch.Elapsed.TotalMilliseconds + " Millisecond. with " + amount + " numbers.\n");
         }
+
+        [DataTestMethod]
+        [DataRow(100)]
+        [DataRow(1000)]
+        [DataRow(10000)]
+        [DataRow(50000)]
+        public void QuickSortTest(int amount)
+        {
+            //Create Insertion Sort Array
+            int[] quickSortArray = new int[amount];
+            Array.Copy(randomizedValues, 0, quickSortArray, 0, amount);
+
+            //Start Timer
+            Stopwatch stopWatch = Stopwatch.StartNew();
+
+            //Perform Insertion Sort
+            quickSortArray = SortingAlgorithms.QuickSort(quickSortArray, 0, quickSortArray.Length - 1);
+
+            //End Timer
+            stopWatch.Stop();
+
+            //Check Insertion Sort
+            Assert.IsTrue(SortingAlgorithms.CheckSort(quickSortArray), "Bubble Sort took: " + stopWatch.Elapsed.TotalMilliseconds + " Millisecond. with " + amount + " numbers.\n");
+        }
     }
 }
