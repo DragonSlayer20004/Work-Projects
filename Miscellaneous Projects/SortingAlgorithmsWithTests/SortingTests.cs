@@ -69,7 +69,7 @@ namespace SortingAlgorithm
             stopWatch.Stop();
 
             //Check Insertion Sort
-            Assert.IsTrue(SortingAlgorithms.CheckSort(insertionsortArray), "Bubble Sort took: " + stopWatch.Elapsed.TotalMilliseconds + " Millisecond. with " + amount + " numbers.\n");
+            Assert.IsTrue(SortingAlgorithms.CheckSort(insertionsortArray), "Insertion Sort took: " + stopWatch.Elapsed.TotalMilliseconds + " Millisecond. with " + amount + " numbers.\n");
         }
 
         [DataTestMethod]
@@ -93,7 +93,37 @@ namespace SortingAlgorithm
             stopWatch.Stop();
 
             //Check Insertion Sort
-            Assert.IsTrue(SortingAlgorithms.CheckSort(quickSortArray), "Bubble Sort took: " + stopWatch.Elapsed.TotalMilliseconds + " Millisecond. with " + amount + " numbers.\n");
+            Assert.IsTrue(SortingAlgorithms.CheckSort(quickSortArray), "Quick Sort took: " + stopWatch.Elapsed.TotalMilliseconds + " Millisecond. with " + amount + " numbers.\n");
+        }
+
+        [DataTestMethod]
+        [DataRow(100)]
+        [DataRow(1000)]
+        [DataRow(10000)]
+        [DataRow(50000)]
+        public void HashSortTest(int amount)
+        {
+            //Create Hash Sort Array
+            int[] hashSortArray = new int[amount];
+            Array.Copy(randomizedValues, 0, hashSortArray, 0, amount);
+
+            //Round all values of hashSortArray to be under 100000 for the sort to work.
+            for (int i = 0; i < amount; i++)
+            {
+                hashSortArray[i] = hashSortArray[i] % 100000;
+            }
+
+            //Start Timer
+            Stopwatch stopWatch = Stopwatch.StartNew();
+
+            //Perform Hash Sort
+            hashSortArray = SortingAlgorithms.HashSort(hashSortArray);
+
+            //End Timer
+            stopWatch.Stop();
+
+            //Check Hash Sort
+            Assert.IsTrue(SortingAlgorithms.CheckSort(hashSortArray), "Hash Sort took: " + stopWatch.Elapsed.TotalMilliseconds + " Millisecond. with " + amount + " numbers.\n");
         }
     }
 }

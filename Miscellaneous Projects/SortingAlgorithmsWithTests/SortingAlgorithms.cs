@@ -86,21 +86,21 @@ namespace SortingAlgorithm
 
             Console.WriteLine("Executing QuickSort Sort");
 
-            //Create Insertion Sort Array
+            //Create QuickSort Sort Array
             int[] quickSortArray = new int[amount];
             Array.Copy(randomizedValues, 0, quickSortArray, 0, amount);
 
             //Start Timer
             stopWatch.Restart();
 
-            //Perform Insertion Sort
+            //Perform QuickSort Sort
             quickSortArray = QuickSort(quickSortArray, 0, quickSortArray.Length - 1);
 
             //End Timer
             stopWatch.Stop();
 
 
-            //Check Insertion Sort
+            //Check QuickSort Sort
             if (CheckSort(quickSortArray))
             {
                 Console.WriteLine("QuickSort Sort took: " + stopWatch.Elapsed.TotalMilliseconds + " Millisecond.\n");
@@ -108,6 +108,38 @@ namespace SortingAlgorithm
             else
             {
                 Console.WriteLine("QuickSort Sort failed to sort.\n");
+            }
+
+            Console.WriteLine("Executing HashSort Sort");
+
+            //Create HashSort Sort Array
+            int[] hashSortArray = new int[amount];
+            Array.Copy(randomizedValues, 0, hashSortArray, 0, amount);
+
+            //Round all values of hashSortArray to be under 100000 for the sort to work.
+            for(int i = 0; i < amount; i++)
+            {
+                hashSortArray[i] = hashSortArray[i] % 100000;
+            }
+
+            //Start Timer
+            stopWatch.Restart();
+
+            //Perform HashSort Sort
+            hashSortArray = HashSort(hashSortArray);
+
+            //End Timer
+            stopWatch.Stop();
+
+
+            //Check HashSort Sort
+            if (CheckSort(hashSortArray))
+            {
+                Console.WriteLine("HashSort Sort took: " + stopWatch.Elapsed.TotalMilliseconds + " Millisecond.\n");
+            }
+            else
+            {
+                Console.WriteLine("HashSort Sort failed to sort.\n");
             }
         }
 
@@ -222,6 +254,46 @@ namespace SortingAlgorithm
             quickSortArray[pivotIndex] = quickSortArray[right];
             quickSortArray[right] = temp;
             return pivotIndex;
+        }
+
+        /**
+         * Counts how many of each number we have and then prints them out in order.
+         * Current implementation of HashShort doesn't include negative numbers
+         * HashSort cannot sort large numbers as such it has been reduced to be under 1000
+         */
+        public static int[] HashSort(int[] hashSortArray)
+        {
+            //Grab arraySize
+            int length = hashSortArray.Length;
+
+            //Find largest value
+            int maxValue = hashSortArray.Max() + 1;
+
+            //Create a new hash function of upto maxValue size
+            int[] hashArray = new int[maxValue];
+
+            //Traverse all elements and count them
+            for (int i = 0; i < length; i++)
+            {
+                hashArray[hashSortArray[i]] += 1;
+            }
+
+            //Print the number of elements present in order from the start.
+            int currentLocation = hashSortArray.Length - 1;
+            for (int i = 0; i < maxValue; i++)
+            {
+                //Check if number is present
+                if (hashArray[i] != 0)
+                {
+                    //Save element into main hashSortArray number of times that it exists
+                    for(int j = 0; j < hashArray[i]; j++)
+                    {
+                        hashSortArray[currentLocation] = i;
+                        currentLocation--;
+                    }
+                }
+            }
+            return hashSortArray;
         }
     }
 }
