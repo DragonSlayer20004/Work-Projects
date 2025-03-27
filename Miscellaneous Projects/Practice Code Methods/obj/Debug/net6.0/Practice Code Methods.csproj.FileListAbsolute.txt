@@ -1,0 +1,15 @@
+C:\Users\drago\source\repos\Work-Projects\Miscellaneous Projects\Practice Code Methods\bin\Debug\net6.0\Practice Code Methods.exe
+C:\Users\drago\source\repos\Work-Projects\Miscellaneous Projects\Practice Code Methods\bin\Debug\net6.0\Practice Code Methods.deps.json
+C:\Users\drago\source\repos\Work-Projects\Miscellaneous Projects\Practice Code Methods\bin\Debug\net6.0\Practice Code Methods.runtimeconfig.json
+C:\Users\drago\source\repos\Work-Projects\Miscellaneous Projects\Practice Code Methods\bin\Debug\net6.0\Practice Code Methods.dll
+C:\Users\drago\source\repos\Work-Projects\Miscellaneous Projects\Practice Code Methods\bin\Debug\net6.0\Practice Code Methods.pdb
+C:\Users\drago\source\repos\Work-Projects\Miscellaneous Projects\Practice Code Methods\obj\Debug\net6.0\Practice Code Methods.csproj.AssemblyReference.cache
+C:\Users\drago\source\repos\Work-Projects\Miscellaneous Projects\Practice Code Methods\obj\Debug\net6.0\Practice Code Methods.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\drago\source\repos\Work-Projects\Miscellaneous Projects\Practice Code Methods\obj\Debug\net6.0\Practice Code Methods.AssemblyInfoInputs.cache
+C:\Users\drago\source\repos\Work-Projects\Miscellaneous Projects\Practice Code Methods\obj\Debug\net6.0\Practice Code Methods.AssemblyInfo.cs
+C:\Users\drago\source\repos\Work-Projects\Miscellaneous Projects\Practice Code Methods\obj\Debug\net6.0\Practice Code Methods.csproj.CoreCompileInputs.cache
+C:\Users\drago\source\repos\Work-Projects\Miscellaneous Projects\Practice Code Methods\obj\Debug\net6.0\Practice Code Methods.dll
+C:\Users\drago\source\repos\Work-Projects\Miscellaneous Projects\Practice Code Methods\obj\Debug\net6.0\refint\Practice Code Methods.dll
+C:\Users\drago\source\repos\Work-Projects\Miscellaneous Projects\Practice Code Methods\obj\Debug\net6.0\Practice Code Methods.pdb
+C:\Users\drago\source\repos\Work-Projects\Miscellaneous Projects\Practice Code Methods\obj\Debug\net6.0\Practice Code Methods.genruntimeconfig.cache
+C:\Users\drago\source\repos\Work-Projects\Miscellaneous Projects\Practice Code Methods\obj\Debug\net6.0\ref\Practice Code Methods.dll

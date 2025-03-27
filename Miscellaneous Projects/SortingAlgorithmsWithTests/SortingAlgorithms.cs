@@ -201,14 +201,18 @@ namespace SortingAlgorithm
         {
             for (int i = 0; i < insertionsortArray.Length; i++)
             {
+                // Determine the key to check against.
                 int key = insertionsortArray[i];
                 int j = i - 1;
-
+                
+                // Anything less than the key gets moved over to the right by one.
                 while (j >= 0 && insertionsortArray[j] < key)
                 {
                     insertionsortArray[j + 1] = insertionsortArray[j];
                     j -= 1;
                 }
+
+                //Once it reaches the end or finds a number greater than the key we fill in the hole we created with the key.
                 insertionsortArray[j + 1] = key;
             }
 
