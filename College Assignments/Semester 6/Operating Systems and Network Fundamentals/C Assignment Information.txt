@@ -1,0 +1,24 @@
+Semester 6 at Otterbein university course COMP 3400 Operating Systems and Network Fundamentals.
+
+Short Course Description:
+Introduction to the principles, design, and functions of computer operating systems and networks. Emphasis on process, processor and memory management; 
+network operating systems; Internet and local area network structures and protocols; network applications software; and security.
+
+Additional Info:
+Projects are done in groups of 2 as such not all code is created by me. Most assignments and projects are started off of a template and precreated tests designed
+to guide us alongside the assignments. The goal of the assignments and projects is to get all the tests given to us to pass.
+
+There are 8 assignments total and 3 projects total. All assignments are done predominantly in C.
+
+Assignment1: 
+Assignment2: 
+Assignment3: 
+Assignment4: 
+Assignment5: 
+Assignment6: 
+Assignment7: 
+Assignment8: 
+
+Project1:
+Project2:
+Project3:
