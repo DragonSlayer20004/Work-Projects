@@ -1,0 +1,18 @@
+Semester 6 at Otterbein university course COMP 1800 Computing in Python
+
+Short Course Description:
+A first course in computer programming for non-majors. Data types, control flow, objects, methods, classes, lists, and dictionaries
+are some of the topics covered. Problems are taken from a wide range of domains such as numerical computation, cryptography, 
+statistics, image processing, fractal geometry, data analytics, and simulation.
+
+There are 9 assignments total. All assignments done predominantly in Python.
+
+Assignment1: 
+Assignment2: 
+Assignment3: 
+Assignment4: 
+Assignment5: 
+Assignment6: 
+Assignment7: 
+Assignment8: 
+Assignment9: 
