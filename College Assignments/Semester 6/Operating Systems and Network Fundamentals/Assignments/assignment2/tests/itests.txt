@@ -1,0 +1,7 @@
+MIN_short                      pass
+MIN_longer                     pass
+MIN_invalid                    pass
+FULL_short                     pass
+FULL_longer                    pass
+FULL_invalid                   pass
+No memory leak found.

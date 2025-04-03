@@ -1,0 +1,80 @@
+Running suite(s): Default
+NEW.ADMIT -> RDY
+  [Process is live]
+RDY.DISPATCH -> RUN
+RUN.EXIT -> TRM
+
+  Process stats:
+    runtime: 1
+    normal exit: true
+  [Process is live]
+  [Process is live]
+NEW.ADMIT -> RDY
+  [Process is live]
+RDY.DISPATCH -> RUN
+RUN.EXIT -> TRM
+
+  Process stats:
+    runtime: 1
+    normal exit: true
+NEW.ADMIT -> RDY
+  [Process is live]
+RDY.BLOCK -> BLK
+  [Process is blocked]
+BLK.UNBLOCK -> RDY
+  [Process is unblocked]
+RDY.DISPATCH -> RUN
+RUN.DISPATCH -> RUN
+RUN.DISPATCH -> RUN
+RUN.EXIT -> TRM
+
+  Process stats:
+    runtime: 3
+    normal exit: true
+NEW.ADMIT -> RDY
+  [Process is live]
+RDY.DISPATCH -> RUN
+RUN.ADMIT -> NST
+RUN.KILL -> NST
+RUN.EXIT -> TRM
+
+  Process stats:
+    runtime: 1
+    normal exit: true
+NEW.ADMIT -> RDY
+  [Process is live]
+RDY.BLOCK -> BLK
+  [Process is blocked]
+BLK.UNBLOCK -> RDY
+  [Process is unblocked]
+RDY.DISPATCH -> RUN
+RUN.DISPATCH -> RUN
+RUN.DISPATCH -> RUN
+RUN.EXIT -> TRM
+
+  Process stats:
+    runtime: 3
+    normal exit: true
+NEW.ADMIT -> RDY
+  [Process is live]
+RDY.BLOCK -> BLK
+  [Process is blocked]
+BLK.UNBLOCK -> RDY
+  [Process is unblocked]
+RDY.BLOCK -> BLK
+  [Process is blocked]
+NEW.ADMIT -> RDY
+  [Process is live]
+RDY.BLOCK -> BLK
+  [Process is blocked]
+BLK.UNBLOCK -> RDY
+  [Process is unblocked]
+RDY.DISPATCH -> RUN
+RUN.DISPATCH -> RUN
+RUN.SCHEDULE -> RDY
+RDY.KILL -> TRM
+
+  Process stats:
+    runtime: 2
+    normal exit: false
+100%: Checks: 10, Failures: 0, Errors: 0
